@@ -6,7 +6,7 @@ var app = exp()
 
 
 
-app.get('/empform',function(req,res){
+app.get('/',function(req,res){
     res.sendFile(__dirname+"/form.html")
 })
 
@@ -29,6 +29,6 @@ res.write("</div>")
   res.end;
 });
 
-app.listen(9000,function(){
-    console.log("Server started at 9000")
+app.listen(9999,function(){
+    console.log("Server started at 9999")
 })
